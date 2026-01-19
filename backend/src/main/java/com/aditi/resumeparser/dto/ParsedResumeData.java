@@ -1,4 +1,4 @@
-package com.nextskill.dto;
+package com.aditi.resumeparser.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,11 +1,12 @@
-package com.nextskill.config;
+package com.aditi.resumeparser.config;
 
-import com.nextskill.repository.ResumeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import com.aditi.resumeparser.repository.ResumeRepository;
 
 @Configuration
 @RequiredArgsConstructor

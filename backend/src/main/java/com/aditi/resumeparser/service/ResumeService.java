@@ -1,11 +1,12 @@
-package com.nextskill.service;
+package com.aditi.resumeparser.service;
 
-import com.nextskill.model.Resume;
-import com.nextskill.repository.ResumeRepository;
 import org.apache.tika.Tika;
 import org.apache.tika.exception.TikaException;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
+
+import com.aditi.resumeparser.model.Resume;
+import com.aditi.resumeparser.repository.ResumeRepository;
 
 import java.io.IOException;
 

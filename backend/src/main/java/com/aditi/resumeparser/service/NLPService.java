@@ -1,6 +1,5 @@
-package com.nextskill.service;
+package com.aditi.resumeparser.service;
 
-import com.nextskill.model.*;
 import opennlp.tools.namefind.NameFinderME;
 import opennlp.tools.namefind.TokenNameFinderModel;
 import opennlp.tools.tokenize.TokenizerME;
@@ -8,6 +7,8 @@ import opennlp.tools.tokenize.TokenizerModel;
 import opennlp.tools.util.Span;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
+
+import com.aditi.resumeparser.model.*;
 
 import java.io.IOException;
 import java.io.InputStream;

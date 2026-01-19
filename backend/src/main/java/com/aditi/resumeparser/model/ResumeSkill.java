@@ -1,4 +1,4 @@
-package com.nextskill.model;
+package com.aditi.resumeparser.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -10,7 +10,11 @@ import lombok.ToString;
 @Data
 @NoArgsConstructor
 public class ResumeSkill {
+public void setResume(Resume resume) {
+    this.resume = resume;
+}
 
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -1,8 +1,9 @@
-package com.nextskill.repository;
+package com.aditi.resumeparser.repository;
 
-import com.nextskill.model.ResumeSkill;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.aditi.resumeparser.model.ResumeSkill;
 
 @Repository
 public interface ResumeSkillRepository extends JpaRepository<ResumeSkill, Long> {

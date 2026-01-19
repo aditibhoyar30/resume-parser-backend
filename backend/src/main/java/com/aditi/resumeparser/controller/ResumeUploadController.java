@@ -1,12 +1,13 @@
-package com.nextskill.controller;
+package com.aditi.resumeparser.controller;
 
-import com.nextskill.model.Resume;
-import com.nextskill.service.ResumeService;
 import lombok.RequiredArgsConstructor;
 import org.apache.tika.exception.TikaException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+
+import com.aditi.resumeparser.model.Resume;
+import com.aditi.resumeparser.service.ResumeService;
 
 import java.io.IOException;
 import java.util.HashMap;

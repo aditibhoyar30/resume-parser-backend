@@ -1,4 +1,4 @@
-package com.nextskill;
+package com.aditi.resumeparser;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
