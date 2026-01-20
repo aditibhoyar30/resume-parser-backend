@@ -3,7 +3,7 @@
 A backend application that allows users to upload resumes (PDF/DOCX), parses key information, and stores structured resume data in a database.
 This project focuses on file upload handling, backend processing, database design, and REST API development.
 
-🚀 Project Overview
+## 🚀 Project Overview
 
 The Resume Parser Backend provides a REST API to:
 - Upload resume files (PDF / DOCX)
@@ -82,47 +82,14 @@ curl -X POST \
     "status": "success"
 }
 ```
+⚠️ Current Limitation (Known Issue)
 
-```
+At the current stage:
+       - The system does not extract all resume fields perfectly
+       - Fields such as:
+                      full_name
+                      summary
+       - may be stored as null for some resumes
 
-
-## 📁 Project Structure
-
-```
-NextSkill/
-├── backend/
-│   ├── src/main/java/com/nextskill/
-│   │   ├── controller/
-│   │   │   └── ResumeUploadController.java    # REST API endpoints
-│   │   ├── service/
-│   │   │   ├── ResumeService.java             # Business logic
-│   │   │   └── NLPService.java                # NLP processing
-│   │   ├── model/
-│   │   │   ├── Resume.java                    # Resume entity
-│   │   │   └── ResumeSkill.java               # Skill entity
-│   │   ├── repository/
-│   │   │   ├── ResumeRepository.java          # Resume data access
-│   │   │   └── ResumeSkillRepository.java     # Skill data access
-│   │   ├── dto/
-│   │   │   └── ParsedResumeData.java          # Data transfer objects
-│   │   └── config/
-│   │       └── ApplicationConfig.java         # Application configuration
-│   ├── src/main/resources/
-│   │   ├── application.properties             # Configuration
-│   │   ├── db/migration/                      # Database migrations
-│   │   └── nlp-models/                        # OpenNLP models
-│   └── pom.xml                                # Maven dependencies
-└── README.md                                  # This file
-```
-### Manual Testing
-1. Upload a PDF resume
-2. Check parsing results
-3. Verify skill extraction accuracy
-4. Test confidence scores
-
-
- 
-
----
-
+``` 
 **NextSkill** - Making resume parsing intelligent and accurate! 🎯
