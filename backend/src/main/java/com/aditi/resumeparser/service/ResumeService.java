@@ -9,6 +9,7 @@ import com.aditi.resumeparser.model.Resume;
 import com.aditi.resumeparser.repository.ResumeRepository;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 
 @Service
 public class ResumeService {
@@ -46,4 +47,19 @@ public class ResumeService {
         // Step 4: Save the complete, structured Resume object to the database via the repository.
         return resumeRepository.save(parsedResume);
     }
+    
+    //private final ResumeRepository resumeRepository;
+
+    // TEMP TEST METHOD (we will remove later)
+    // public Resume createTestResume() {
+    //     Resume resume = new Resume();
+    //     resume.setOriginalFileName("service_test_resume.pdf");
+    //     resume.setFullName("Aditi Bhoyar");
+    //     resume.setEmail("aditi@test.com");
+    //     resume.setPhoneNumber("8888888888");
+    //     resume.setSummary("Resume saved from service layer");
+    //     resume.setCreatedAt(LocalDateTime.now());
+
+    //     return resumeRepository.save(resume);
+    // }
 }
